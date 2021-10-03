@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 10%;
+}
+
+.navbar {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar > .navbar-brand {
+  letter-spacing: 2px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #094b65;
+}
+
+.navbar-nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navbar-nav > .nav-item {
+  margin-left: 15px;
+  padding: 3px 10px;
+  border-radius: 25px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.navbar-nav > .nav-item:hover, .navbar-nav > .nav-item.active {
+  background-color: #094b65;
+  color: #fff;
+}
+
+.navbar-nav > .nav-item:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#094b65), to(transparent));
+  background: linear-gradient(to top, #094b65, transparent);
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+
+#water {
+  z-index: 10;
+}
+
+#slogan {
+  position: absolute;
+  color: #094b65;
+  line-height: .55em;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 10vw;
+  font-weight: bold;
+  font-family: 'Rancho', sans-serif;
+}
+
+#slogan > span {
+  letter-spacing: 2px;
+  font-size: .2em;
+  font-weight: normal;
+  font-family: sans-serif;
+}
+
+#btn {
+  display: inline-block;
+  z-index: 1;
+  margin-top: 13vw;
+  padding: 1vw 4vw;
+  border-radius: 40px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #094b65;
+  font-size: 1.2em;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+#btn:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+article {
+  position: relative;
+  z-index: 20;
+  padding: 13vw;
+  background-color: #094b65;
+}
+
+article > h2 {
+  color: #fff;
+  font-size: 3.5em;
+  margin-bottom: 10px;
+}
+
+article > p {
+  color: #fff;
+  font-size: 1em;
+}
+/*# sourceMappingURL=index.css.map */
